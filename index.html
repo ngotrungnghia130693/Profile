@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>www.website.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
+</head>
+<script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+<style>
+    .imagecon:nth-child(1){
+        background-image: url('image/sg1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(2){
+        background-image: url('image/sg2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(3){
+        background-image: url('image/sg3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(4){
+        background-image: url('image/sg4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(5){
+        background-image: url('image/sg5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+  
+    <div id="navbar">
+        <a href="#" id="logo">Ngô Trung Nghĩa</a>
+        <div id="navbar-right">
+          <a class="active" href="#">Home</a>
+          <a href="https://linktr.ee/trungnghia93">Contact</a>
+          <a href="#">About</a>
+    </div>
+    </div>
+    <div class="header">
+      <h1>Information</h1>
+      
+        <h1 class="mb-0">             
+          Ngô Trung Nghĩa
+      </h1>
+      <h2 class="mb-1">
+        K16/06 Phạm Văn Nghị · Đà Nẵng  · (+84) 905007513 ·
+        <a href="mailto:ngotrungnghia1@gmail.com">ngotrungnghia1@gmail.com</a>
+      </h2>
+      
+      <h2>Tôi sinh ra và lớn lên tại thành phố Đà Nẵng. Mục tiêu của tôi là được góp sức để xây dựng cho Đà Nẵng trở nên hiện đại hơn. Mong muốn làm việc trong môi trường chuyên nghiệp, ổn định và phát triển để gắn bó lâu dài.</h2>
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.facebook.com/ngotrungnghia1/"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="https://github.com/ngotrungnghia130693"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="https://www.instagram.com/nghiango13/"><i class="fab fa-instagram"></i></a>
+        
+    </div>
+    </div>
+     <div class="slider">
+      <div class="sliderchild">
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+      </div>
+	  </div>
+
+
+    <div class="row">
+      <div class="side">
+        <h2><span>About Me</span></h2>
+        <div class="fakeimg">
+          <img src="image/profile.jpg" alt="" width="600px" height="500px">
+        </div>
+        <p>I'm Nghia , A Software Developer and A Industrial Informatics Ingineer</p>
+        <h2>Tech Skills</h2>
+        <h4>Web Development</h4>
+          <div class="fakeimgs">
+            <p>Frontend - HTML, CSS, JavaScript</p>
+          </div>
+          <div class="fakeimgs">
+            <p>Backend - PHP.</p>
+          </div>
+          <div class="fakeimgs">
+            <p>Database - MySQL.</p>
+          </div>
+        <br><br>
+        <h4>Programming Language</h4>
+          <div class="fakeimgs">
+            <p> C++, Java and python </p>
+          </div>
+          <h4>Control Engineering and Automation</h4>
+          <div class="fakeimgs">
+            <p>Programming, repair devices (PLC Schneider, Siemens, Mitsubishi)
+              and HMI (Wincc) with Ethernet,Wifi connection by IIoT Vbox.</p>
+          </div>
+          
+        <br><br>
+        
+      </div>
+      <div class="main">
+        <h2><span>My Website</span></h2>
+        <body onload="startTime()">
+          <h4>Thời Gian Hiện Tại </h4>
+          <p> <b><div id="txt"></div></b> </p>
+          <h5>Ho Chi Minh, Viet Nam ( Utc +7 )</h5>
+        </body>
+          <div class="fakeimg" style="height:200px;">
+            <img src="image/saigon.jpg" alt="" height="400px" width="650px">
+          </div>
+        <div style="margin-top: 35%;"></div>
+          <h2><span>Sài Gòn Cố Lên</span></h2>    
+          <p>May có TP. HCM sầm uất, nhiều việc làm người dân quê mình vào đó chăm chỉ làm ăn, nên giờ mới có nhà cao cửa đẹp như hôm nay. Xem trên tivi, thấy TP. HCM tấp nập giờ nằm yên để chiến đấu với Covid mà thương, mà thèm được nhìn cảnh tắc đường, nhộn nhịp. Thèm nghe tiếng người rao bán hàng rong đêm, ngày hay đơn giản là những quán bia vỉa hè dành cho những người lao động nghèo uống để hạ nhiệt sau một ngày làm việc trong nắng oi ả của TP. HCM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"
+      <h3>&copy; Copyright 2021. All Right Reserved</h3>
+      <h3>Developed by Trung Nghĩa</h3>
+      
+    </div>
+    
+
+</body>
+</html>
